@@ -23,6 +23,17 @@ namespace Employees.Pages
         public ListViewPage()
         {
             InitializeComponent();
+            EmployeesListView.ItemsSource = Data.EmployeesEntities.GetContext().Employees.ToList();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.LoginPage());
+        }
+
+        private void AddUser_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.Addpage());
         }
     }
 }

@@ -8,7 +8,6 @@ C:\Users\comcuru\Desktop\Employees\Employees\bin\Debug\EntityFramework.SqlServer
 C:\Users\comcuru\Desktop\Employees\Employees\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.csproj.AssemblyReference.cache
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\MainWindow.g.cs
-C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\AddEditPage.g.cs
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\ListViewPage.g.cs
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\App.g.cs
@@ -16,7 +15,6 @@ C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees_Content.g.cs
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees_MarkupCompile.cache
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees_MarkupCompile.lref
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\MainWindow.baml
-C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\AddEditPage.baml
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\ListViewPage.baml
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\LoginPage.baml
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.g.resources
@@ -27,3 +25,5 @@ C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.csproj.CopyComp
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.exe
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.pdb
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\App.baml
+C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\Addpage.g.cs
+C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Pages\Addpage.baml
