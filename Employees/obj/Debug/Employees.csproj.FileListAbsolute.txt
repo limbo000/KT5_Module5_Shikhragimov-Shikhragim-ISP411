@@ -26,3 +26,4 @@ C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.csproj.CoreComp
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.csproj.CopyComplete
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.exe
 C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\Employees.pdb
+C:\Users\comcuru\Desktop\Employees\Employees\obj\Debug\App.baml

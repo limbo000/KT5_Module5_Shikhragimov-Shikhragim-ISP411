@@ -24,5 +24,56 @@ namespace Employees.Pages
         {
             InitializeComponent();
         }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                StringBuilder errors = new StringBuilder();
+                if (string.IsNullOrEmpty(LoginTextBox.Text))
+                {
+                    errors.AppendLine("Заполните логин");
+                }
+                if (string.IsNullOrEmpty(PasswordBox.Password))
+                {
+                    errors.AppendLine("Заполните пароль");
+                }
+                if (errors.Length > 0)
+                {
+                    MessageBox.Show(errors.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                if (Data.EmployeesEntities.GetContext().Employees.
+                    Any(d => d.Login == LoginTextBox.Text && d.Password == PasswordBox.Password))
+                {
+                    var user = Data.EmployeesEntities.GetContext().Employees.
+                    FirstOrDefault(d => d.Login == LoginTextBox.Text && d.Password == PasswordBox.Password);
+
+                    switch (user.Role.RoleName)
+                    {
+                        case "Администратор":
+                            Classes.Manager.MainFrame.Navigate(new Pages.ListViewPage());
+                            break;
+                        case "Исполнитель":
+                            Classes.Manager.MainFrame.Navigate(new Pages.ListViewPage());
+                            break;
+                        case "Менеджер":
+                            Classes.Manager.MainFrame.Navigate(new Pages.ListViewPage());
+                            break;
+                    }
+                    MessageBox.Show("Успех!", "Успешно!", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Удачи вам!", "Здравствуйте!", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Некорректный логин/пароль!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }
